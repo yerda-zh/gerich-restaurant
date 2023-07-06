@@ -1,0 +1,7 @@
+.subheading-text{
+    transition: 0.3s;
+}
+.subheading-text:hover{
+    color: var(--color-golden);
+    cursor: default;
+}

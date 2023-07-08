@@ -1,5 +1,11 @@
+.app__intro_back {
+    display: flex;
+    justify-content: center;
+}
+
 .app__video {
-    height: 95vh;
+    height: 90vh;
+    width: 95%;
     position: relative;
 }
 .app__video video {
@@ -10,7 +16,13 @@
 .app__video-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.40);
+    background: rgba(0, 0, 0, 0);
+    transition: .3s ease;
+    opacity: 0;
+}
+.app__video-overlay:hover {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
 }
 .app__video-overlay_circle {
     width: 100px;
